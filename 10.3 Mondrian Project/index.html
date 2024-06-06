@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      height: 748px;
+      width: 748px;
+      margin: auto;
+      background-color: rgb(231, 231, 231);
+      display: grid;
+      grid-template-rows: 414px 285px auto;
+      grid-template-columns: 320px auto 50px;
+    }
+    .red{
+      background-color: red;
+      border-right:solid 9px;
+      border-bottom: solid 9px;
+    }
+    .second{
+      border-bottom: solid 9px;
+      background-color: green;
+      grid-area: 1/ 2 / 2 / 4 ;
+    }
+    .third{
+      border-bottom: solid 9px;
+      border-right: solid 9px;
+    }
+    .four{
+      border-bottom: solid 9px; 
+      border-right: solid 9px;
+    }
+    .blue{
+      background-color: blue;
+      height: 130px;
+      width: 50px;
+      border-bottom: solid 19px;
+    }
+    .six{
+      border-right: solid 9px;
+    }
+    .seven{
+      display: flex;
+      border-right: solid 9px;
+    }
+    .yellow{
+      background-color: yellow;
+      width: 198px;
+      height: auto;
+    }
+    .black{
+      background-color: rgb(61, 61, 61);
+      width: 171px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row-grid red" ></div>
+    <div class="row-grid second"></div>
+    <div class="row-grid third"></div>
+    <div class="row-grid four"></div>
+    <div class="in">
+      <div class="row-grid blue"></div>
+      <div class="row-grid under-blue"></div>  
+    </div>
+    <div class="row-grid six"></div>  
+    <div class="row-grid seven">
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>  
+    <!-- <div class="row-grid eight"></div>  
+    <div class="row-grid nine"></div>   -->
+  </div>
+</body>
+
+</html>
